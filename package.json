@@ -26,8 +26,12 @@
   "scripts": {
     "start": "hubot --name \"botmou\"",
     "prod": "hubot --name \"botmou\" --adapter slack",
-    "test": "",
-    "precommit": "lint-staged"
+    "test": ""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js, json, css, md}": [
