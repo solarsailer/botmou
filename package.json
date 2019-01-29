@@ -26,7 +26,7 @@
   "scripts": {
     "start": "hubot --name \"botmou\"",
     "prod": "hubot --name \"botmou\" --adapter slack",
-    "test": ""
+    "test": "eslint ."
   },
   "prettier": {
     "semi": false,
@@ -52,6 +52,9 @@
     }
   },
   "lint-staged": {
+    "*.{js, json}": [
+      "eslint"
+    ],
     "*.{js, json, css, md}": [
       "prettier --write",
       "git add"
