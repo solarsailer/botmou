@@ -28,6 +28,11 @@
     "prod": "hubot --name \"botmou\" --adapter slack",
     "test": ""
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": false
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
