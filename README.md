@@ -34,6 +34,8 @@ First, we need to create a public Google Sheet.
 2. Turn on web publishing by going to "File/Publish to web".
 3. Copy the Google Sheet link with the big "Share" button on the top right of your sheet.
 
+[(You can find more information about this here.)](https://github.com/theoephraim/node-google-spreadsheet#unauthenticated-access-read-only-access-on-public-docs)
+
 You have a token inside this link:
 
 ```
