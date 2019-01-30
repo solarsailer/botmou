@@ -8,9 +8,9 @@ Or you could just clone it and deploy it on your server or VPS instance.
 
 ## Installation
 
-Clone or fork this repository, then:
+Clone this repository (or your fork):
 
-```
+```bash
 git clone REPO_URL
 cd REPO
 yarn
@@ -38,7 +38,7 @@ First, we need to create a public Google Sheet.
 
 You have a token inside this link:
 
-```
+```bash
 // Example:
 https://docs.google.com/spreadsheets/d/thisismytoken/
 
@@ -47,13 +47,14 @@ https://docs.google.com/spreadsheets/d/thisismytoken/
 
 Add this token as an environment variable when launching the bot.
 
-For example, if you want to try the model in your shell, type (on macOS/Linux):
+For example, if you want to try the model in your shell, type:
 
-```
+```bash
+// On macOS or Linux.
 env SHEET_TOKEN=1zBVFMGqO3jfBwEfVtEdfb9jtIWp7q036EH8G0g84HLE yarn start
 ```
 
-Note: be careful, the sheet is potentially visible by anyone.
+**Note: be careful, the sheet is potentially visible by anyone.**
 
 ### Cleverbot
 
@@ -61,7 +62,7 @@ You can also use Cleverbot with your bot. You need to get a token on [cleverbot.
 
 Try it with:
 
-```
+```bash
 env CLEVERBOT_TOKEN=token yarn start
 
 // In your Hubot shell, type:
