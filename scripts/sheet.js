@@ -226,6 +226,10 @@ module.exports = robot => {
 
     // For each row, add a new trigger.
     rows.forEach(row => {
+      // Ignore row if regex is empty.
+      if (!isString(row.regex)) return
+      if (row.regex.trim() === '') return
+
       const answer = makeAnswer(row)
 
       robot.hear(new RegExp(row.regex, 'i'), res => picker(() => answer(res)))
