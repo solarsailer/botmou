@@ -20,11 +20,27 @@ You're ready.
 
 ## Configuration
 
+### Bot name
+
+In your `package.json` file, change `botmou` by anything you want:
+
+```json
+  "scripts": {
+    "start": "hubot --name \"botmou\"",
+    "prod": "hubot --name \"botmou\" --adapter slack",
+    // …
+  },
+```
+
+But you can leave `botmou`: the actual name will be configured in the Slack App configuration.
+
 ### Slack integration
 
 You should add the [Hubot app](https://slack.com/apps/A0F7XDU93-hubot) in your Slack configuration. It will generate a token.
 
 Configure the `HUBOT_SLACK_TOKEN` environment variable to bind this bot to your Slack team with the newly generated token.
+
+Don't forget to set a custom name here for your bot.
 
 ### Using a Google Sheet
 
