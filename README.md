@@ -1,4 +1,4 @@
-# ![botmou](example.gif)
+# <center>![botmou](example.gif)</center>
 
 > `botmou` is a pre-configured [Hubot](https://hubot.github.com) installation that can be connected to a Google Sheet and/or a Cleverbot instance.
 
