@@ -1249,12 +1249,6 @@ hubot-redis-brain@1.0.0:
   dependencies:
     redis "^2.7.1"
 
-hubot-scripts@^2.17.2:
-  version "2.17.2"
-  resolved "https://registry.yarnpkg.com/hubot-scripts/-/hubot-scripts-2.17.2.tgz#9b08e907d5cfaba72d783204067a78ce9df3ae24"
-  dependencies:
-    redis "0.8.4"
-
 hubot-slack@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/hubot-slack/-/hubot-slack-4.6.0.tgz#c016cc1b6cf76a35d613acb98382d14bafdfd7ad"
@@ -2248,10 +2242,6 @@ redis-commands@^1.2.0:
 redis-parser@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/redis-parser/-/redis-parser-2.6.0.tgz#52ed09dacac108f1a631c07e9b69941e7a19504b"
-
-redis@0.8.4:
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/redis/-/redis-0.8.4.tgz#14609f26414e211c31e3cd07dc79b04bf9ff1980"
 
 redis@^2.7.1:
   version "2.8.0"
