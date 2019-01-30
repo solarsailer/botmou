@@ -97,3 +97,22 @@ But in the end, you should have at least 2 of these 3 variables configured:
 - `CLEVERBOT_TOKEN` (optional)
 
 Otherwise, this bot will be pretty useless.
+
+### Docker container
+
+There's a Dockerfile provided with this repository.
+
+Don't forget to set an env-file when starting the container:
+
+```shell
+docker build -t botmou .
+docker run --name botmou --restart always --env-file /path/to/botmou.env -d botmou
+```
+
+Env-file boilerplate:
+
+```
+HUBOT_SLACK_TOKEN=
+CLEVERBOT_TOKEN=
+SHEET_TOKEN=
+```
