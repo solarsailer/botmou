@@ -129,3 +129,13 @@ HUBOT_SLACK_TOKEN=
 CLEVERBOT_TOKEN=
 SHEET_TOKEN=
 ```
+
+## Contributing
+
+Feel free to send a pull request. 🙏
+
+Your code must pass the [ESLint](https://eslint.org/) check and be formatted through [Prettier](https://prettier.io/). Hopefully, this is automagically executed before any commit, so you shouldn't have to worry too much about this.
+
+Also do note that this is a **boilerplate repository**. It means that a change must be useful to everyone to be accepted. A private joke for you Slack team is for your fork, not this base repository. 😉
+
+(For example, we have multiple custom scripts for our own [Pixelnest's botmou, called "Krokmou"](https://pixelnest.io/), like an angry mode, a reaction mode and other special ones — yet, those are purely private jokes and behaviors, so we don't publish them on this repository.)
