@@ -26,4 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 node_modules/
 bower_components/
-  
+
+# App.
+.hubot_history
