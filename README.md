@@ -20,20 +20,6 @@ You're ready.
 
 ## Configuration
 
-### Bot name
-
-In your `package.json` file, change `botmou` by anything you want:
-
-```json
-  "scripts": {
-    "start": "hubot --name \"botmou\"",
-    "prod": "hubot --name \"botmou\" --adapter slack",
-    // …
-  },
-```
-
-But you can leave `botmou`: the actual name will be configured in the Slack App configuration.
-
 ### Slack integration
 
 You should add the [Hubot app](https://slack.com/apps/A0F7XDU93-hubot) in your Slack configuration. It will generate a token.
@@ -85,6 +71,19 @@ env CLEVERBOT_TOKEN=token yarn start
 botmou: hello my dear bot!
 
 // If it's working, you should get a pseudo-intelligent answer.
+```
+
+### Bot name
+
+The actual name will be configured in the Slack App configuration.
+
+However, if you want to customize the name in your shell, open your `package.json` file and change `botmou` by anything you want:
+
+```json
+"scripts": {
+  "start": "hubot --name \"botmou\"",
+  "prod": "hubot --name \"botmou\" --adapter slack",
+},
 ```
 
 ## Deployment
