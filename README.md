@@ -1,10 +1,8 @@
-# botmou
+# ![botmou](example.gif)
 
-`botmou` is a pre-configured [Hubot](https://hubot.github.com) installation that can be connected to a Google Sheet and/or a Cleverbot instance.
+> `botmou` is a pre-configured [Hubot](https://hubot.github.com) installation that can be connected to a Google Sheet and/or a Cleverbot instance.
 
-Fork this repository if you want to make some changes or add new scripts.
-
-Or you could just clone it and deploy it on your server or VPS instance.
+Fork this repository if you want to make some changes or add new scripts. Or you could just clone and deploy it on your server or VPS instance.
 
 ## Installation
 
@@ -13,7 +11,22 @@ Clone this repository (or your fork):
 ```shell
 git clone REPO_URL
 cd REPO
+
+# Install packages:
 yarn
+
+# Start the bot:
+yarn start
+```
+
+Then, in the hubot shell:
+
+```shell
+# Type:
+botmou> botmou ping
+
+# And… 🎉
+botmou> Shell: pong
 ```
 
 You're ready.
@@ -41,10 +54,10 @@ First, we need to create a public Google Sheet.
 You have a token inside this link:
 
 ```shell
-// Example:
+# Example:
 https://docs.google.com/spreadsheets/d/thisismytoken/
 
-// The token is: thisismytoken
+# The token is: thisismytoken
 ```
 
 Add this token as an environment variable when launching the bot.
@@ -52,7 +65,7 @@ Add this token as an environment variable when launching the bot.
 For example, if you want to try the model in your shell, type:
 
 ```shell
-// On macOS or Linux.
+# On macOS or Linux.
 env SHEET_TOKEN=1zBVFMGqO3jfBwEfVtEdfb9jtIWp7q036EH8G0g84HLE yarn start
 ```
 
@@ -67,10 +80,10 @@ Try it with:
 ```shell
 env CLEVERBOT_TOKEN=token yarn start
 
-// In your Hubot shell, type:
+# In your Hubot shell, type:
 botmou: hello my dear bot!
 
-// If it's working, you should get a pseudo-intelligent answer.
+# If it's working, you should get a pseudo-intelligent answer.
 ```
 
 ### Bot name
